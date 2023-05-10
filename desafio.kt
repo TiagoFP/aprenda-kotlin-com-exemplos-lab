@@ -21,14 +21,14 @@ data class Formacao(val nome: String, val conteudos: List<ConteudoEducacional>) 
 
 fun main() {
     val conteudos = listOf(
-        ConteudoEducacional("Kotlin Básico", "20 Horas", Nivel.BASICO),
-        ConteudoEducacional("Kotlin Intermediário", "30 Horas", Nivel.INTERMEDIARIO),
-        ConteudoEducacional("Kotlin Avançado", "40 Horas", Nivel.AVANCADO)
+        ConteudoEducacional("Kotlin Básico", "10 Horas", Nivel.BASICO),
+        ConteudoEducacional("Kotlin Intermediário", "20 Horas", Nivel.INTERMEDIARIO),
+        ConteudoEducacional("Kotlin Avançado", "30 Horas", Nivel.AVANCADO)
     )
 
-    val usuario1 = Usuario("Victor Hugo", Nivel.INTERMEDIARIO)
-    val usuario2 = Usuario("Joelma dos Santos", Nivel.BASICO)
-    val usuario3 = Usuario("Alexandre", Nivel.AVANCADO)
+    val usuario1 = Usuario("João da Silva", Nivel.INTERMEDIARIO)
+    val usuario2 = Usuario("Maria Santana", Nivel.BASICO)
+    val usuario3 = Usuario("Vitor Baima", Nivel.AVANCADO)
 
     val formacao = Formacao("Kotlin", conteudos)
     formacao.matricular(usuario1)
